@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Precision in Evidence — Priya Forensic Science</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#16212b", "tertiary-fixed-dim": "#89ceff", "tertiary": "#d4ebff", "on-secondary-container": "#d0b267", "on-tertiary-container": "#005c84", "surface-tint": "#00dfc4", "surface-container-high": "#202b36", "on-tertiary-fixed-variant": "#004c6e", "on-primary-container": "#006155", "inverse-primary": "#006b5d", "surface-variant": "#2b3641", "error": "#ffb4ab", "primary-fixed": "#41fcdf", "on-tertiary-fixed": "#001e2f", "tertiary-container": "#97d3ff", "inverse-surface": "#d8e4f2", "surface-dim": "#09141e", "on-tertiary": "#00344d", "secondary-container": "#594400", "surface-container-lowest": "#050f19", "outline-variant": "#3b4a46", "on-primary-fixed-variant": "#005046", "secondary": "#e2c376", "tertiary-fixed": "#c9e6ff", "secondary-fixed": "#ffdf93", "on-error": "#690005", "outline": "#84948f", "primary-container": "#00e5c9", "on-error-container": "#ffdad6", "surface": "#09141e", "on-surface-variant": "#b9cac5", "on-secondary-fixed-variant": "#594400", "background": "#09141e", "on-primary": "#00372f", "surface-container-low": "#121d27", "inverse-on-surface": "#27313c", "on-primary-fixed": "#00201b", "surface-bright": "#2f3a45", "primary-fixed-dim": "#00dfc4", "secondary-fixed-dim": "#e2c376", "on-surface": "#d8e4f2", "on-secondary": "#3e2e00", "primary": "#70ffe5", "error-container": "#93000a", "on-background": "#d8e4f2", "on-secondary-fixed": "#241a00", "surface-container-highest": "#2b3641" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "margin": "3rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "code-specimen": ["JetBrains Mono"], "body-md": ["Inter"], "display-hero": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-caps": ["Inter"], "display-hero-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "code-meta": ["JetBrains Mono"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "code-specimen": ["11px", {"lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600"}], "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400"}], "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600"}], "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.015em", "fontWeight": "400"}], "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600"}], "display-hero-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "headline-sm": ["18px", {"lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "0.005em", "fontWeight": "400"}], "code-meta": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500"}], "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600"}] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#09141e;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}details>summary{list-style:none;}details>summary::-webkit-details-marker{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen relative antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Priya Forensic Science Monogram" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VYs6I3LTVUHfRyKndLee35k14TEH_AJsQxeHJBAleDBPAxv13AvzKJAqDiRCGTJXkUcAry0kjHwY6eoIeJ0LtEYsfwcakaFI9wXRrWXvGz0YX2YJwSJSgjMZaZWE-dA4QO0dFyJN2CJe2seutGvbonfBn846xBYZletgNK-AfuqiBlDo-vE9YJHtf2Xuwh2d77xFZMc9rYtN6hVl1j4Wh-0PLjC_BrTd1Ues8Aa5QaMjDHa_sySVuUGfo"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold uppercase truncate">PRIYA</span><span class="font-code-specimen text-code-specimen text-primary/80 hidden sm:inline">// EVIDENCE DOSSIER</span></div><span class="font-code-meta text-code-meta text-on-surface-variant truncate">Dossier Overview</span></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="hidden xs:flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high/80 text-secondary"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="font-code-specimen text-code-specimen uppercase">3RD YR • GEETA UNIV</span></div><details class="relative"><summary aria-label="Toggle Forensic Navigation Drawer" class="w-11 h-11 flex items-center justify-center rounded-xl bg-surface-container-high text-on-surface cursor-pointer hover:text-primary transition-colors focus:outline-none"><span class="material-symbols-outlined text-[20px]">grid_view</span></summary><div class="absolute right-0 mt-2 w-64 p-space-sm bg-surface-container-high/95 backdrop-blur-2xl rounded-xl shadow-2xl flex flex-col gap-1 z-50"><div class="px-space-sm py-1 flex items-center justify-between"><span class="font-code-specimen text-code-specimen text-outline uppercase tracking-wider">SECTOR INDEX</span><span class="font-code-specimen text-code-specimen text-primary font-mono">SYS.01</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface hover:bg-surface-variant hover:text-primary transition-all" href="#about"><span class="material-symbols-outlined text-[18px] text-primary">fingerprint</span><span class="font-body-md text-body-md font-medium">About Specimen</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface hover:bg-surface-variant hover:text-primary transition-all" href="#education"><span class="material-symbols-outlined text-[18px] text-primary">school</span><span class="font-body-md text-body-md font-medium">Education</span></a><a class="flex items-center gap-screen px-space-sm py-2 rounded-lg text-on-surface hover:bg-surface-variant hover:text-primary transition-all" href="#experience"><span class="material-symbols-outlined text-[18px] text-primary">biotech</span><span class="font-body-md text-body-md font-medium">Lab Experience</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface hover:bg-surface-variant hover:text-primary transition-all" href="#skills"><span class="material-symbols-outlined text-[18px] text-primary">psychology</span><span class="font-body-md text-body-md font-medium">Forensic Skills</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface hover:bg-surface-variant hover:text-primary transition-all" href="#projects"><span class="material-symbols-outlined text-[18px] text-primary">folder_open</span><span class="font-body-md text-body-md font-medium">Case Projects</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface hover:bg-surface-variant hover:text-primary transition-all" href="#interests"><span class="material-symbols-outlined text-[18px] text-primary">neurology</span><span class="font-body-md text-body-md font-medium">Research Areas</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface hover:bg-surface-variant hover:text-primary transition-all" href="#contact"><span class="material-symbols-outlined text-[18px] text-primary">mail</span><span class="font-body-md text-body-md font-medium">Direct Dispatch</span></a></div></details><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="px-gutter-mobile py-0.5 bg-surface-container-lowest/80 flex items-center justify-between text-on-surface-variant"><span class="font-code-specimen text-code-specimen uppercase tracking-widest text-outline">REC // 2024-2027 • FORENSIC SCI</span><span class="font-code-specimen text-code-specimen text-secondary font-mono tracking-tighter">LOC // GU-HARYANA</span></div></header><main class="flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- HERO SECTION -->
+<section class="relative w-full px-gutter-mobile py-space-xl flex flex-col gap-space-lg overflow-hidden">
+<!-- Ambient Calibration Grid Background (SVG) -->
+<div class="absolute inset-0 pointer-events-none opacity-20 flex items-center justify-center">
+<svg class="w-full h-full text-primary" fill="none" stroke="currentColor" stroke-width="0.5" viewbox="0 0 400 400">
+<circle cx="200" cy="200" r="180" stroke-dasharray="2 4"></circle>
+<circle cx="200" cy="200" r="120"></circle>
+<circle cx="200" cy="200" r="60" stroke-dasharray="1 3"></circle>
+<line x1="20" x2="380" y1="200" y2="200"></line>
+<line x1="200" x2="200" y1="20" y2="380"></line>
+<line x1="190" x2="210" y1="140" y2="140"></line>
+<line x1="190" x2="210" y1="260" y2="260"></line>
+<line x1="140" x2="140" y1="190" y2="210"></line>
+<line x1="260" x2="260" y1="190" y2="210"></line>
+</svg>
+</div>
+<!-- Eyebrow Pill -->
+<div class="flex items-center gap-space-xs self-start px-3 py-1 rounded-full bg-surface-container-high text-secondary">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-code-specimen text-code-specimen uppercase tracking-wider font-semibold">B.SC. (HONS) FORENSIC SCIENCE • 3RD YEAR</span>
+</div>
+<!-- Main Headline & Subtitle -->
+<div class="flex flex-col gap-space-sm relative z-10">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold tracking-tight">
+        Exploring Evidence.<br/>
+<span class="text-primary">Understanding Science.</span><br/>
+        Pursuing Truth.
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-1">
+        I am Priya, a B.Sc. (Hons) Forensic Science student at Geeta University, with internship experience spanning crime scene investigation and forensic laboratory analysis. I am seeking advanced internship or training opportunities in government forensic science laboratories.
+      </p>
+</div>
+<!-- Telemetry Datum Badges -->
+<div class="flex flex-wrap gap-2 pt-1 relative z-10">
+<div class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+<span class="font-code-specimen text-code-specimen">Geeta University • Panipat, Haryana</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">calendar_month</span>
+<span class="font-code-specimen text-code-specimen">Academic Period: 2024–2027</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+<span class="font-code-specimen text-code-specimen">Status: 3rd Year Forensic Student</span>
+</div>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col xs:flex-row gap-space-sm pt-2 relative z-10">
+<a class="min-h-[48px] px-5 py-3 rounded-lg bg-primary text-on-primary flex items-center justify-center gap-2 font-code-meta text-code-meta uppercase tracking-wider font-semibold active:scale-[0.98] transition-transform shadow-md" href="#experience">
+<span>Explore My Experience</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="min-h-[48px] px-5 py-3 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center gap-2 font-code-meta text-code-meta uppercase tracking-wider font-semibold hover:text-primary active:scale-[0.98] transition-all" href="mailto:parikataria89@gmail.com">
+<span class="material-symbols-outlined text-[18px] text-primary">mail</span>
+<span>Get In Touch</span>
+</a>
+</div>
+<!-- Forensic Reticle Optical Graphic Strip -->
+<div class="mt-space-sm p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-2 relative">
+<div class="flex items-center justify-between font-code-specimen text-code-specimen text-outline uppercase tracking-widest">
+<span>OPTICAL RETICLE STAGE // SCALE REF: 1:1</span>
+<span class="text-primary font-mono">LAT: 29.3909° N • LON: 76.9635° E</span>
+</div>
+<div class="w-full h-8 flex items-center justify-between px-1">
+<span class="h-4 w-0.5 bg-primary"></span>
+<span class="h-2 w-0.5 bg-outline-variant"></span>
+<span class="h-2 w-0.5 bg-outline-variant"></span>
+<span class="h-3 w-0.5 bg-secondary"></span>
+<span class="h-2 w-0.5 bg-outline-variant"></span>
+<span class="h-2 w-0.5 bg-outline-variant"></span>
+<span class="h-4 w-0.5 bg-primary"></span>
+<span class="h-2 w-0.5 bg-outline-variant"></span>
+<span class="h-2 w-0.5 bg-outline-variant"></span>
+<span class="h-3 w-0.5 bg-secondary"></span>
+<span class="h-2 w-0.5 bg-outline-variant"></span>
+<span class="h-2 w-0.5 bg-outline-variant"></span>
+<span class="h-4 w-0.5 bg-primary"></span>
+</div>
+</div>
+</section>
+<!-- 01 // ABOUT ME SECTION -->
+<section class="w-full px-gutter-mobile py-space-lg flex flex-col gap-space-md" id="about">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-code-specimen text-code-specimen text-primary font-bold uppercase tracking-widest">01 // DOSSIER OVERVIEW</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">About Me</h2>
+</div>
+<!-- Photo Card Feature -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container shadow-md">
+<div class="w-full h-52 bg-cover bg-center" data-alt="Close-up aesthetic shot of forensic science examination tools, optical stereomicroscope eyepiece, glass slides, and lab notebook illuminated in cool teal and amber glow inside a pristine modern research laboratory setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBcLmf5c0NEJ_68lSSC2UouOjxyu_CuxjIZlk2z3uwrk5_CYzfsn4SaVq5C1Yn-uGyfsIqTf6dnophppvFprS1WZmCVxAzY403oZsmNew1WsZ-lRs4tcdNEK90u3e9qI3Q5nkAor34FU4Ej8hnsdsVN6n5YTj-x6M3ivNXf0QW-zpSfwO1Ofc_oysQEy4aObFw3_Fiobg-HORAVrwU9uEEX2d77c1JvSqVhlEvWVbzV6Y3zp3HrsRsCcg')">
+</div>
+<div class="p-space-md flex flex-col gap-space-xs bg-surface-container-high">
+<div class="flex items-center justify-between font-code-specimen text-code-specimen text-outline uppercase">
+<span>SPECIMEN DOSSIER ID</span>
+<span class="text-primary font-mono">PK-2024-FS</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+          I am a diligent B.Sc. (Hons) Forensic Science student with internship experience in both crime scene investigation and forensic laboratory analysis. My academic and practical exposure has helped me understand the forensic-legal process, from field evidence collection and preservation to laboratory examination and scientific documentation.
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          My interests include forensic biology, serology, trace evidence, medicolegal evidence handling, and scientific report writing. I aim to continue developing my practical and analytical abilities through advanced internship and training opportunities.
+        </p>
+</div>
+</div>
+<!-- Four Core Pillars 2x2 Grid -->
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col gap-1.5 shadow-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">science</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px] leading-tight">Evidence-Based Thinking</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-snug">Empirical rigor rooted in standard operating protocols.</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col gap-1.5 shadow-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px] leading-tight">Scientific Documentation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-snug">Medicolegal precision for court admissibility.</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col gap-1.5 shadow-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px] leading-tight">Analytical Observation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-snug">Microscopic discrimination of trace &amp; biological cues.</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col gap-1.5 shadow-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">trending_up</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px] leading-tight">Professional Growth</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-snug">Continuous dedication to government lab standards.</span>
+</div>
+</div>
+</section>
+<!-- 02 // EDUCATION TIMELINE SECTION -->
+<section class="w-full px-gutter-mobile py-space-lg flex flex-col gap-space-md" id="education">
+<div class="flex flex-col gap-1">
+<span class="font-code-specimen text-code-specimen text-primary font-bold uppercase tracking-widest">02 // ACADEMIC PROFILE</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Academic Background</h2>
+</div>
+<!-- Timeline Wrapper -->
+<div class="flex flex-col gap-space-sm relative">
+<!-- Card 1: Degree (Primary) -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-code-specimen text-code-specimen text-primary font-mono uppercase tracking-wider">HIGHER EDUCATION</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest font-code-specimen text-code-specimen text-secondary font-semibold">2024–2027 • 3RD YEAR</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">B.Sc. (Hons) Forensic Science</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Geeta University, Naultha, Panipat, Haryana</p>
+<div class="pt-2 flex flex-col gap-1.5">
+<span class="font-code-specimen text-code-specimen text-outline uppercase tracking-wider">KEY COURSEWORK SYLLABUS</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container-high font-code-specimen text-code-specimen text-on-surface">Forensic Biology</span>
+<span class="px-2 py-1 rounded bg-surface-container-high font-code-specimen text-code-specimen text-on-surface">Serology</span>
+<span class="px-2 py-1 rounded bg-surface-container-high font-code-specimen text-code-specimen text-on-surface">Crime Scene Investigation</span>
+<span class="px-2 py-1 rounded bg-surface-container-high font-code-specimen text-code-specimen text-on-surface">Trace Evidence</span>
+<span class="px-2 py-1 rounded bg-surface-container-high font-code-specimen text-code-specimen text-on-surface">Forensic Documentation</span>
+</div>
+</div>
+</div>
+<!-- Card 2: 12th -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-code-specimen text-code-specimen text-outline uppercase">SENIOR SECONDARY (12TH)</span>
+<span class="font-code-specimen text-code-specimen text-primary font-mono">COMPLETED</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-[16px]">CBSE Board, Haryana</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pre-university foundational science with strong grounding in Physics, Chemistry, and Biology.</p>
+</div>
+<!-- Card 3: 10th -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-code-specimen text-code-specimen text-outline uppercase">SECONDARY (10TH)</span>
+<span class="font-code-specimen text-code-specimen text-primary font-mono">COMPLETED</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-[16px]">HBSE Board, Haryana</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Foundational secondary education with distinction in General Sciences.</p>
+</div>
+</div>
+</section>
+<!-- 03 // INTERNSHIP EXPERIENCE SECTION -->
+<section class="w-full px-gutter-mobile py-space-lg flex flex-col gap-space-md" id="experience">
+<div class="flex flex-col gap-1">
+<span class="font-code-specimen text-code-specimen text-primary font-bold uppercase tracking-widest">03 // FIELD &amp; LABORATORY EXPOSURE</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Internship &amp; Practical Experience</h2>
+</div>
+<!-- Forensic Workflow Pipeline Banner -->
+<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-sm shadow-md">
+<span class="font-code-specimen text-code-specimen text-outline uppercase tracking-wider">OPERATIONAL EVIDENCE LIFECYCLE</span>
+<div class="flex items-center justify-between gap-1 text-center font-code-specimen text-code-specimen">
+<div class="flex-1 p-2 rounded bg-surface-container flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">search_check</span>
+<span class="text-[10px] leading-tight text-on-surface font-semibold">Field Collection</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0">arrow_forward</span>
+<div class="flex-1 p-2 rounded bg-surface-container flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-secondary">biotech</span>
+<span class="text-[10px] leading-tight text-on-surface font-semibold">Lab Examination</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0">arrow_forward</span>
+<div class="flex-1 p-2 rounded bg-surface-container flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">fact_check</span>
+<span class="text-[10px] leading-tight text-on-surface font-semibold">Documentation</span>
+</div>
+</div>
+</div>
+<!-- Experience Card 1: District Forensic Science Lab -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm shadow-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-code-specimen text-code-specimen text-secondary uppercase font-semibold">2026 • COMPLETED • LAB ANALYSIS</span>
+<span class="font-code-specimen text-code-specimen text-outline">REF: DFSL-SNP</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Forensic Science Laboratory Intern</h3>
+<p class="font-body-md text-body-md text-primary font-medium">District Forensic Science Laboratory, Sonipat, Haryana</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Developed exposure to forensic laboratory workflows, evidence examination, documentation, and scientific reporting under the supervision of laboratory experts.
+      </p>
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Assisted in examination and analysis of forensic evidence, including biological, chemical, and physical samples under supervision.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Gained hands-on experience in forensic biology, serology, and trace evidence techniques.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Learned about quality control, documentation, and chain-of-custody standards.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Observed and supported the processing of case exhibits following standard operating procedures.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Developed the ability to interpret laboratory findings and prepare preliminary forensic reports in accordance with scientific and legal protocols.</span>
+</div>
+</div>
+</div>
+<!-- Experience Card 2: Reveal Affirm Testify -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm shadow-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-code-specimen text-code-specimen text-secondary uppercase font-semibold">2025 • COMPLETED • FIELD INVESTIGATION</span>
+<span class="font-code-specimen text-code-specimen text-outline">REF: RAT-NOIDA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Crime Scene Investigation &amp; Evidence Analysis Intern</h3>
+<p class="font-body-md text-body-md text-primary font-medium">Reveal Affirm Testify, Noida, Uttar Pradesh</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Gained practical exposure to crime scene documentation, physical evidence collection, preservation, and forensic case documentation under senior forensic officers.
+      </p>
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Conducted documentation, collection, and preservation of physical evidence at crime scenes under supervision.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Applied forensic biology and serology techniques, including blood pattern analysis, hair and fibre examination, and biological trace evidence identification and packaging.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Prepared detailed forensic case reports and evidence submission forms suitable for medicolegal proceedings.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Assisted in crime scene reconstruction and scale sketch preparation.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 04 // SKILLS & COMPETENCIES SECTION -->
+<section class="w-full px-gutter-mobile py-space-lg flex flex-col gap-space-md" id="skills">
+<div class="flex flex-col gap-1">
+<span class="font-code-specimen text-code-specimen text-primary font-bold uppercase tracking-widest">04 // METHODOLOGIES &amp; PROTOCOLS</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Skills &amp; Competencies</h2>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Forensic Science Group -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">biotech</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface text-[16px]">Forensic Science Disciplines</h3>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Crime Scene Processing</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Forensic Biology</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Serology Analysis</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Trace Evidence</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Medicolegal Evidence Handling</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Chain of Custody Protocol</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Forensic Report Writing</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Case Documentation</span>
+</div>
+</div>
+<!-- Legal & Professional Group -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">gavel</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface text-[16px]">Legal &amp; Professional Standards</h3>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Indian Evidence Act &amp; CrPC Provisions</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Court Admissibility Standards</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Legal Drafting</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Forensic Analysis Research</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Professional Communication</span>
+</div>
+</div>
+<!-- Professional Attributes & Languages Row -->
+<div class="grid grid-cols-1 xs:grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col gap-2 shadow-sm">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span class="font-headline-sm text-headline-sm text-[15px] text-on-surface">Attributes</span>
+</div>
+<div class="flex flex-col gap-1 text-on-surface font-body-sm text-body-sm">
+<span>• Keen Observation</span>
+<span>• Analytical Thinking</span>
+<span>• Formal Scientific Writing</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col gap-2 shadow-sm">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[18px]">translate</span>
+<span class="font-headline-sm text-headline-sm text-[15px] text-on-surface">Languages</span>
+</div>
+<div class="flex flex-col gap-1 text-on-surface font-body-sm text-body-sm">
+<div class="flex justify-between items-center">
+<span>Hindi</span>
+<span class="font-code-specimen text-code-specimen text-outline uppercase">Native</span>
+</div>
+<div class="flex justify-between items-center">
+<span>English</span>
+<span class="font-code-specimen text-code-specimen text-primary uppercase">Proficient</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 05 // ACADEMIC RESEARCH & PROJECTS -->
+<section class="w-full px-gutter-mobile py-space-lg flex flex-col gap-space-md" id="projects">
+<div class="flex flex-col gap-1">
+<span class="font-code-specimen text-code-specimen text-primary font-bold uppercase tracking-widest">05 // ACADEMIC STUDIES</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Academic Research &amp; Reports</h2>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Project 01 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-code-specimen text-code-specimen text-primary font-mono font-semibold">STD-01-CFR</span>
+<span class="font-code-specimen text-code-specimen text-outline uppercase">RESEARCH REPORT</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Forensic Facial Reconstruction</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Study on craniofacial reconstruction techniques used in unidentified victim identification cases.
+        </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-outline text-[11px] font-code-meta">Forensic Anthropology</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-outline text-[11px] font-code-meta">Identification Techniques</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-outline text-[11px] font-code-meta">Scientific Study</span>
+</div>
+</div>
+<!-- Project 02 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-code-specimen text-code-specimen text-primary font-mono font-semibold">STD-02-SKL</span>
+<span class="font-code-specimen text-code-specimen text-outline uppercase">CASE EXAMINATION</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Forensic Anthropology &amp; Odontology</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Case study on skeletal age estimation, sex determination, and dental record comparison in forensic investigations.
+        </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-outline text-[11px] font-code-meta">Skeletal Analysis</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-outline text-[11px] font-code-meta">Forensic Anthropology</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-outline text-[11px] font-code-meta">Forensic Odontology</span>
+</div>
+</div>
+<!-- Project 03 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-code-specimen text-code-specimen text-primary font-mono font-semibold">STD-03-SER</span>
+<span class="font-code-specimen text-code-specimen text-outline uppercase">MONOGRAPH DOSSIER</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Forensic Biology &amp; Serology</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Comprehensive notes on blood typing, ABO grouping, DNA profiling fundamentals, and biological evidence handling protocols.
+        </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-outline text-[11px] font-code-meta">Forensic Biology</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-outline text-[11px] font-code-meta">Serology</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-outline text-[11px] font-code-meta">DNA Profiling Fundamentals</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-outline text-[11px] font-code-meta">Biological Evidence Handling</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 06 // AREAS OF INTEREST -->
+<section class="w-full px-gutter-mobile py-space-lg flex flex-col gap-space-md" id="interests">
+<div class="flex flex-col gap-1">
+<span class="font-code-specimen text-code-specimen text-primary font-bold uppercase tracking-widest">06 // SPECIALIZATION FOCUS</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Areas of Interest</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      Building a foundation in scientific observation, evidence handling, documentation, and forensic analysis through academic learning and supervised practical exposure.
+    </p>
+<!-- 5 Focus Modules -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">bloodtype</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Forensic Biology &amp; Serology</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Biological fluid classification, presumptive assays, and cellular isolation.</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Crime Scene Documentation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Photographic scale reference, triangulation, and baseline sketches.</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">grain</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Trace Evidence Examination</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Hair, fiber, particulate matching, and microscopic comparison.</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Forensic Laboratory Workflows</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Standard Operating Procedures, calibration hygiene, and custody logs.</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Scientific &amp; Medicolegal Reporting</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Objective analysis articulation for judicial scrutiny and case records.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 07 // CERTIFICATIONS & ACHIEVEMENTS -->
+<section class="w-full px-gutter-mobile py-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-code-specimen text-code-specimen text-primary font-bold uppercase tracking-widest">07 // PROFESSIONAL DEVELOPMENT</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Certifications &amp; Achievements</h2>
+</div>
+<!-- Verified Milestone Container -->
+<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-sm shadow-inner">
+<div class="flex items-center justify-between">
+<span class="font-code-specimen text-code-specimen text-secondary uppercase font-semibold">STATUS // UPDATE READY</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+        Additional certifications, academic achievements, and professional development milestones can be added here as they are completed and verified.
+      </p>
+<div class="flex items-center gap-2 pt-1 font-code-meta text-code-meta text-outline">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>Future credentials verified under academic standard protocols.</span>
+</div>
+</div>
+</section>
+<!-- 08 // LET'S CONNECT / CONTACT SECTION -->
+<section class="w-full px-gutter-mobile py-space-xl flex flex-col gap-space-md" id="contact">
+<div class="flex flex-col gap-1">
+<span class="font-code-specimen text-code-specimen text-primary font-bold uppercase tracking-widest">08 // INQUIRIES &amp; COLLABORATION</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Let's Connect</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Interested in academic collaboration, forensic science training, or internship opportunities? Feel free to reach out.
+      </p>
+</div>
+<!-- Action Box -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-md shadow-lg">
+<div class="flex flex-col gap-1">
+<span class="font-code-specimen text-code-specimen text-outline uppercase">OFFICIAL TRANSMISSION CHANNEL</span>
+<span class="font-code-meta text-[15px] text-primary font-bold break-all">parikataria89@gmail.com</span>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col xs:flex-row gap-space-sm">
+<a class="min-h-[48px] px-5 py-3 rounded-lg bg-primary text-on-primary flex items-center justify-center gap-2 font-code-meta text-code-meta uppercase tracking-wider font-semibold active:scale-[0.98] transition-transform shadow-md" href="mailto:parikataria89@gmail.com">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Send Email</span>
+</a>
+<button class="min-h-[48px] px-5 py-3 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center gap-2 font-code-meta text-code-meta uppercase tracking-wider font-semibold hover:text-primary active:scale-[0.98] transition-all" id="copy-email-btn" onclick="copyEmail()">
+<span class="material-symbols-outlined text-[18px] text-secondary" id="copy-icon">content_copy</span>
+<span id="copy-text">Copy Address</span>
+</button>
+</div>
+<!-- Lab Posting Availability Note -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">info</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+          Available for Government Forensic Science Laboratory training, regional CFSL / SFSL apprentice postings, and academic research partnerships.
+        </span>
+</div>
+</div>
+</section>
+<!-- Interactive Client-side Script for Copy Feedback -->
+<script>
+    function copyEmail() {
+      const email = 'parikataria89@gmail.com';
+      navigator.clipboard.writeText(email).then(() => {
+        const textEl = document.getElementById('copy-text');
+        const iconEl = document.getElementById('copy-icon');
+        if (textEl && iconEl) {
+          textEl.textContent = 'Copied to Clipboard!';
+          iconEl.textContent = 'done';
+          setTimeout(() => {
+            textEl.textContent = 'Copy Address';
+            iconEl.textContent = 'content_copy';
+          }, 2400);
+        }
+      }).catch(() => {
+        window.location.href = 'mailto:' + email;
+      });
+    }
+  </script>
+</div><footer class="w-full mt-space-xl px-gutter-mobile pt-space-lg pb-space-xl bg-surface-container-lowest/90 flex flex-col gap-space-md"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">PRIYA KATARIA</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Forensic Science Researcher &amp; Crime Scene Documentarian. Focused on Serology, Latent Print Spectroscopy, and Digital Chain-of-Custody integrity.</p></div><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm py-space-sm"><div class="flex flex-col"><span class="font-code-specimen text-code-specimen text-outline uppercase">PRIMARY TRANSMISSION</span><a class="font-code-meta text-code-meta text-primary hover:underline" href="mailto:parikataria89@gmail.com">parikataria89@gmail.com</a></div><div class="flex flex-col"><span class="font-code-specimen text-code-specimen text-outline uppercase">ACADEMIC AFFILIATION</span><span class="font-code-meta text-code-meta text-on-surface">Dept. of Forensic Science • Geeta University</span></div></div><div class="pt-space-sm flex flex-col xs:flex-row items-center justify-between gap-2 text-outline-variant font-code-specimen text-code-specimen"><span class="text-center xs:text-left">© 2025 PRIYA KATARIA • ALL RIGHTS RESERVED</span><span class="text-primary/70 uppercase tracking-widest">UNIMPEACHABLE ARCHIVE</span></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-gutter-mobile"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 w-14 h-14 transition-colors text-primary font-bold" data-path="dossier-overview" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-caps text-label-caps">Overview</span></a><a class="flex flex-col items-center justify-center gap-1 w-14 h-14 text-on-surface-variant transition-colors" data-path="evidence-log" href="#"><span class="material-symbols-outlined text-[20px]">biotech</span><span class="font-label-caps text-label-caps">Evidence</span></a><a class="flex flex-col items-center justify-center gap-1 w-14 h-14 text-on-surface-variant transition-colors" data-path="case-archive" href="#"><span class="material-symbols-outlined text-[20px]">folder_special</span><span class="font-label-caps text-label-caps">Archive</span></a><a class="flex flex-col items-center justify-center gap-1 w-14 h-14 text-on-surface-variant transition-colors" data-path="credentials" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-label-caps text-label-caps">Credentials</span></a><a class="flex flex-col items-center justify-center gap-1 w-14 h-14 text-on-surface-variant transition-colors" data-path="laboratory-inquiry" href="#"><span class="material-symbols-outlined text-[20px]">alternate_email</span><span class="font-label-caps text-label-caps">Dispatch</span></a></div></nav><div class="fixed bottom-20 right-4 z-40 flex flex-col gap-2.5 items-end"><button aria-label="Quick jump to top" class="w-11 h-11 rounded-full bg-surface-container-high/90 text-on-surface backdrop-blur-md shadow-lg flex items-center justify-center hover:text-primary active:scale-95 transition-all" onclick="window.scrollTo({top:0,behavior:'smooth'})"><span class="material-symbols-outlined text-[20px]">arrow_upward</span></button><a class="flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-primary-container text-on-primary-container shadow-[0_4px_16px_rgba(0,229,201,0.25)] hover:bg-primary transition-transform active:scale-95 font-code-specimen text-code-specimen font-semibold" href="mailto:parikataria89@gmail.com"><span class="material-symbols-outlined text-[18px]">outgoing_mail</span><span class="hidden xs:inline uppercase tracking-wider">Get in Touch</span></a></div></body></html>
